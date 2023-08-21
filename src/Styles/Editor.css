@@ -1,0 +1,46 @@
+/* body{
+
+    width: 643px;
+    height: 612px;
+    flex-shrink: 0;
+    fill: #868686;
+} */
+
+input{
+
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: px;
+}
+
+input[placeholer="input"]{
+
+    font-weight: 200;
+}
+
+.Inline {
+
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.Container {
+
+
+    flex: 1;
+    background: rgb(245,245,245);
+
+    /* margin-left: 50%; */
+    /*display: inline-block; */
+    /* margin-top: 5%; */
+    /* margin-left: 15%; */
+    width: 307.402px;
+    height: 631.388px;
+    border: 2px solid white;
+    border-radius: 5%;
+    padding: 35px;
+    margin-right: 20%;
+    margin-left: 5%;
+}
