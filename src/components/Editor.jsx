@@ -14,16 +14,20 @@ function Editor() {
             <label htmlFor="ToolTip_Text">Tooltip text</label> <br/>
             <input type="text" name="" id="ToolTip_Text" placeholder='Input'/>
         </div>
+        
+        <div className='TS_P'>
+                  
+            <div className='Inline'>
+                <label htmlFor="Text_Size">Text Size</label> <br />
+                <input type="text" name="" id="Text_Size" />
+            </div>
 
-        <div className='Inline'>
-            <label htmlFor="Text_Size">Text Size</label> <br />
-            <input type="text" name="" id="Text_Size" />
+            <div className='Inline'>
+                <label htmlFor="Padding">Padding</label> <br />
+                <input type="text" name="" id="Padding" />
+            </div>
         </div>
 
-        <div className='Inline'>
-            <label htmlFor="Padding">Padding</label> <br />
-            <input type="text" name="" id="Padding" />
-        </div>
 
         <div>
             <label htmlFor="Text_Color">Text Colour</label> <br />
@@ -35,25 +39,34 @@ function Editor() {
             <input type="text" name="" id="Background_Color" placeholder='Input'/>
         </div>
 
-        <div className='Inline'>
-            <label htmlFor="Corner_Radius">Corner radius</label> <br />
-            <input type="text" name="" id="Corner_Radius" />
+        <div className='C_TW'>
+            <div className='Inline'>
+                <label htmlFor="Corner_Radius">Corner radius</label> <br />
+                <input type="text" name="" id="Corner_Radius" />
+            </div>
+
+            <div className='Inline'>
+                <label htmlFor="ToolTip_Width">Tooltip width</label> <br />
+                <input type="text" name="" id="ToolTip_Width" />
+            </div>
         </div>
 
-        <div className='Inline'>
-            <label htmlFor="ToolTip_Width">Tooltip width</label> <br />
-            <input type="text" name="" id="ToolTip_Width" />
+
+
+        <div className='AW_AH'>
+
+            <div className='Inline'>
+                <label htmlFor="Arrow_Width">Arrow width</label> <br />
+                <input type="text" name="" id="Arrow_Width" />
+            </div>
+
+            <div className='Inline'>
+                <label htmlFor="Arrow_Height">Arrow height</label> <br />
+                <input type="text" name="" id="Arrow_Height" />
+            </div>
+
         </div>
 
-        <div className='Inline'>
-            <label htmlFor="Arrow_Width">Arrow width</label> <br />
-            <input type="text" name="" id="Arrow_Width" />
-        </div>
-
-        <div className='Inline'>
-            <label htmlFor="Arrow_Height">Arrow height</label> <br />
-            <input type="text" name="" id="Arrow_Height" />
-        </div>
     </div>
     </>
   )

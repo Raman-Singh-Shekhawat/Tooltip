@@ -44,3 +44,23 @@ input[placeholer="input"]{
     margin-right: 20%;
     margin-left: 5%;
 }
+
+.C_TW{
+
+    display: flex;  
+    justify-content: space-between;
+}
+
+.AW_AH{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.TS_P{
+
+    display: flex;
+    justify-content: space-between;
+}
