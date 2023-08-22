@@ -1,30 +1,45 @@
 // import React from 'react'
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 
 
-function ToolTip() {
+function ToolTip({children}) {
   const [state, setState] = useState({ visible: false, x: 0, y: 0, type: "none" });
+  const tooltipRef = useRef();
 
-  const visibility = state.visible ? "on" : "off";
-
-  const style = {
-    left: (state.x + window.scrollX) + 'px',
-    top: (state.y + window.scrollY) + 'px'
-  };
-
-  const classNames = {
-    [state.type]: state.type !== "none",
-    [visibility]: true
-  };
+  useEffect(() => {
+    const tooltip = tooltipRef.current;
+    if(tooltip){
+      tooltip.addEventListener('mouseover', () => {
+        setState((prev) => {
+          return {...prev, visible: true}
+        })
+      })
+      tooltip.addEventListener('mouseout', () => {
+        setState((prev) => {
+          return {...prev, visible: false}
+        })
+      })
+    }
+    return () => {
+      tooltip.removeEventListener('mouseover', () => {})
+      tooltip.removeEventListener('mouseout', () => {})
+    }
+  }, []);
 
   return (
-    <div id="tooltip" className={Object.keys(classNames).join(" ")} style={style}>
-      {/* <Editor /> */}
-      <div className="tooltip-arrow"></div>
-      <div className="tooltip-inner">Tooltip text goes here</div>
+    <div className='tooltip__container' >
+      <div ref={tooltipRef}>{children}</div>
+      <div className={`tooltip`} style={{display: state.visible ? 'block' : 'none'}}>
+        <div className="tooltip-arrow"></div>
+        <div className="tooltip-inner">Tooltip text goes here</div>
+      </div>
     </div>
   );
+
+    //   return <div id="tooltip" className={Object.keys(classNames).join(" ")} style={style}>
+    // {/* <Editor /> */}
+    // <div className="tooltip-arrow"></div><div className="tooltip-inner">Tooltip text goes here</div></div>;
 }
 
 // function Btn(props) {
@@ -42,21 +57,6 @@ function ToolTip() {
 
 
 export default ToolTip;
-
-
-
-
-// import React from 'react'
-
-// function ToolTip() {
-//   return (
-//     <div>
-//       <h1>Hello</h1>
-//     </div>
-//   )
-// }
-
-// export default ToolTip;
 
 
 

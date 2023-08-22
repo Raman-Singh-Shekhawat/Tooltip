@@ -6,15 +6,16 @@ function Editor() {
     <div className='Container'>
 
         <div>
-            <label htmlFor="Target_Element">Target Element</label><br/>
-            <input type="text" name="" id="" />
+            <label for="dropdown">Target Element</label><br/>
+            <select name="dropdown" className="dropdown">
+                <option value="button1">Button 1</option>
+                <option value="button2">Button 2</option>
+                <option value="button3">Button 3</option>
+                <option value="button4">Button 4</option>
+                <option value="button5">Button 5</option>   
+            </select>
         </div>
 
-        <div>   
-            <label htmlFor="ToolTip_Text">Tooltip text</label> <br/>
-            <input type="text" name="" id="ToolTip_Text" placeholder='Input'/>
-        </div>
-        
         <div className='TS_P'>
                   
             <div className='Inline'>

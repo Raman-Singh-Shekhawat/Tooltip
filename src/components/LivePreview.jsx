@@ -7,8 +7,7 @@ function Btn(props) {
       <button
         type="button"
         id={props.id}
-        onMouseOver={props.onMouseOver}
-        onMouseLeave={props.onMouseOut}
+
       >
         {props.text}
       </button>
@@ -16,30 +15,16 @@ function Btn(props) {
   }
 
 function LivePreview() {
-
-    const toolTipRef = useRef();
-
-    const handleOnMouseOut = () => {
-      // toolTipRef.current.hide();
-    };
   
-    const handleOnMouseOver = (evt) => {
-      const el = evt.currentTarget;
-  
-      if (el != null) {
-        const rect = el.getBoundingClientRect();
-      //   toolTipRef.current.show(rect);
-      }
-    };
   
     const createBtn = (id, text) => {
       return (
-        <Btn
-          id={id}
-          onMouseOver={handleOnMouseOver}
-          onMouseOut={handleOnMouseOut}
-          text={text}
-        />
+        <ToolTip key={id}>
+          <Btn
+            id={id}
+            text={text}
+          />
+        </ToolTip>
       );
     };
   
@@ -53,17 +38,9 @@ function LivePreview() {
              <div className='b3'>        {createBtn("btnCenter", "Button 3")}</div>
              <div className='b4_5'>             {createBtn("btnBtmL", "Button 4")}
             {createBtn("btnBtmR", "Button 5")}</div>
-        <ToolTip ref={toolTipRef} />
         </div>
       </div>
     );
-
-  return (
-
-    <div className='LivePreview_Container'>
-        <ToolTip />
-    </div>
-  ) 
   
 }
 
