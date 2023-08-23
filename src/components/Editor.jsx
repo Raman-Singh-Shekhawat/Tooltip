@@ -1,33 +1,33 @@
 import React, { useState } from 'react'
+import ToolTip from './ToolTip';
 
 function Editor() {
 
-    const [selectedButton, setSelectedButton] = useState('');
+    const [selectedButton, setSelectedButton] = useState('btnLeft');
     const [textSize, setTextSize] = useState('');
     const [padding, setPadding] = useState('');
     const [textColor, setTextColor] = useState('');
     const [backgroundColor, setBackgroundColor] = useState('');
-    // const [selectedButton, setSelectedButton] = useState('');
 
-const handleTextChange = (event) => {setSelectedButton(event.target.value);}; 
-const handleTextSize = (event) => {setTextSize(event.target.value);
+    const handleTextChange = (event) => {setSelectedButton(event.target.value);}; 
+    const handleTextSize = (event) => {setTextSize(event.target.value);
 
-    document.getElementById(selectedButton).style.fontSize=event.target.value + 'px';
-}; 
-const handleTextColor = (event) => {setTextColor(event.target.value);
+        document.getElementById(selectedButton).style.fontSize=event.target.value + 'px';
+    }; 
+    const handleTextColor = (event) => {setTextColor(event.target.value);
 
-    document.getElementById(selectedButton).style.color=event.target.value;
-}; 
-const handleBackgroundColor = (event) => {setBackgroundColor(event.target.value);
+        document.getElementById(selectedButton).style.color=event.target.value;
+    }; 
+    const handleBackgroundColor = (event) => {setBackgroundColor(event.target.value);
 
-    document.getElementById(selectedButton).style.backgroundColor=event.target.value;
-}; 
-const handlePadding = (event) => {setPadding(event.target.value);
+        document.getElementById(selectedButton).style.backgroundColor=event.target.value;
+    }; 
+    const handlePadding = (event) => {setPadding(event.target.value);
 
-    document.getElementById(selectedButton).style.padding=event.target.value + 'px';
-}; 
-  return (
-    <>
+        document.getElementById(selectedButton).style.padding=event.target.value + 'px';
+    }; 
+return (
+        <>
     <div className='Container'>
         <div>
             <label for="dropdown">Target Element</label><br/>
@@ -67,7 +67,7 @@ const handlePadding = (event) => {setPadding(event.target.value);
         <div className='C_TW'>
             <div className='Inline'>
                 <label htmlFor="Corner_Radius">Corner radius</label> <br />
-                <input type="number" name="" id="Corner_Radius" />
+                <input type="number" name="" id="Corner_Radius" onChange={ToolTip.handleCornerRadiusChange}/>
             </div>
 
             <div className='Inline'>
@@ -98,10 +98,3 @@ const handlePadding = (event) => {setPadding(event.target.value);
 }
 
 export default Editor
-
-// export function currentElement() {
-
-//     console.log(document.getElementById('dropdown').value)
-// }
-
-// export currentElement()

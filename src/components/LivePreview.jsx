@@ -1,4 +1,3 @@
-// import React from 'react'
 import ToolTip from './ToolTip'
 import React, { useState, useRef } from 'react';
 
@@ -7,7 +6,6 @@ function Btn(props) {
       <button
         type="button"
         id={props.id}
-
       >
         {props.text}
       </button>
