@@ -1,83 +1,56 @@
-
-
 #btnLeft
 {
-  /* background: white; */
-  /* margin-top: 10px; */
-  /* padding: 3px; */
-  /* position: absolute; */
-  /* left: 10px; */
-  /* border: 0.5px solid white; */
-  /* border-radius: 3px; */
-
-  /* display: flex; */
-  /* padding: 8px; */
-  /* align-items: flex-start; */
-  /* gap: 10px; */
-  /* border-radius: 4px; */
-/* background: #FFF; */
-
-background: white;
-padding: 3px;
-/* position: absolute; */
-left: 150px;
-top: 150px;
-border: 5px solid white;
-border-radius: 3px;
-font-weight: 500;
+  background: white;
+  padding: 3px;
+  left: 150px;
+  top: 150px;
+  border: 5px solid white;
+  border-radius: 3px;
+  font-weight: 500;
 }
 
-.b1_2{
-
-    display: inline-flex;
-justify-content: space-between;
-align-items: flex-start;
-gap: 10px;
+.b1_2
+{
+  display: inline-flex; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.b3{
-
-    display: inline-flex;
-padding: 8px;
-align-items: flex-start;
-gap: 10px;
-justify-content: center;
-/* border-radius: 4px;
-background: #FFF; */
+.b3
+{
+  display: inline-flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: center;
 }
 
-.b4_5{
-
-    display: inline-flex;
-justify-content: space-between;
-align-items: flex-start;
-gap: 10px;
+.b4_5
+{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 
 #btnRight
-{
-  /* background: white; */
-  /* margin-top: 10px; */
-  /* padding: 3px; */
-  /* position: absolute; */
-  /* right: 10px; */
+{ 
   border: 0.5px solid white;
-  /* border-radius: 3px; */
   font-weight: 500;
   display: flex;
   padding: 8px;
   align-items: flex-start;
   gap: 10px;
   border-radius: 4px;
-background: #FFF;
+  background: #FFF;
 }
 
 #btnBtmR
 {
   background: white;
   padding: 3px;
-  /* position: absolute; */
   right: 10px;
   bottom: 10px;
   border: 5px solid white;
@@ -87,17 +60,9 @@ background: #FFF;
 
 #btnBtmL
 {
-  /* background: white; */
-  /* padding: 3px; */
-  /* position: absolute; */
-  /* left: 10px; */
-  /* bottom: 10px; */
-  /* border: 5px solid white; */
-  /* border-radius: 3px; */
   background: white;
   padding: 3px;
   font-weight: 500;
-  /* position: absolute; */
   right: 10px;
   bottom: 10px;
   border: 5px solid white;
@@ -108,7 +73,6 @@ background: #FFF;
 {
   background: white;
   padding: 3px;
-  /* position: absolute; */
   font-weight: 500;
   left: 150px;
   top: 150px;
@@ -116,15 +80,14 @@ background: #FFF;
   border-radius: 3px;
 }
 
-
-
-.tooltip__container{
+.tooltip__container
+{
   position: relative;
 }
 
-.tooltip {
+.tooltip 
+{
   position: absolute;
-  /* left: 50px; top: 50px; */
   letter-spacing: normal;
   line-height: 1.42857143;
   color: #000;
@@ -175,8 +138,6 @@ background: #FFF;
   border-right-color: #000;
 }
 
-
-
 .tooltip.top .tooltip-arrow
 {
   top: auto;
@@ -208,7 +169,6 @@ background: #FFF;
 
 .tooltip .tooltip-arrow
 {
-  /* position: absolute; */
   width: 0;
   height: 0;
   border-color: transparent;

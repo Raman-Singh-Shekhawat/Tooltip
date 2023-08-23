@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import ToolTip from './ToolTip';
 
 function Editor() {
 

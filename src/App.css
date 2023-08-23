@@ -1,4 +1,5 @@
-body {
+body 
+{
   background: white;
   padding: 0px;
 
@@ -10,7 +11,8 @@ body {
   line-height: 18px; 
 }
 
-.flex-container{
+.flex-container
+{
   display: flex;
   padding: 80px;
   margin-bottom: 10px;
