@@ -116,6 +116,8 @@ background: #FFF;
   border-radius: 3px;
 }
 
+
+
 .tooltip__container{
   position: relative;
 }
@@ -135,7 +137,7 @@ background: #FFF;
   opacity: 1 !important;
 }
 
-/* .tooltip.right
+ .tooltip.right
 {
   margin-left: 5px;
 }
@@ -153,7 +155,7 @@ background: #FFF;
 .tooltip.bottom
 {
   margin-top: 5px;
-} */
+} 
 
 .tooltip .tooltip-arrow
 {
@@ -164,7 +166,7 @@ background: #FFF;
   border-right-color: #000;
 }
 
-/* .tooltip.right .tooltip-arrow
+ .tooltip.right .tooltip-arrow
 {
   top: 50%;
   left: auto;
@@ -202,11 +204,11 @@ background: #FFF;
   margin-left: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #000;
-} */
+}
 
 .tooltip .tooltip-arrow
 {
-  position: absolute;
+  /* position: absolute; */
   width: 0;
   height: 0;
   border-color: transparent;
@@ -222,4 +224,13 @@ background: #FFF;
   text-align: center;
   background-color: #000;
   border-radius: 4px;
+}
+.tooltip.on 
+{
+  display: block;
+}
+
+.tooltip.off
+{
+  display: none;
 }

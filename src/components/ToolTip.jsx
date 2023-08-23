@@ -1,5 +1,6 @@
 // import React from 'react'
 import React, { useState, useRef, useEffect } from 'react';
+import ReactDOM from 'react-dom'
 
 
 
@@ -9,6 +10,7 @@ function ToolTip({children}) {
 
   useEffect(() => {
     const tooltip = tooltipRef.current;
+    
     if(tooltip){
       tooltip.addEventListener('mouseover', () => {
         setState((prev) => {
@@ -27,10 +29,12 @@ function ToolTip({children}) {
     }
   }, []);
 
+  
+
   return (
     <div className='tooltip__container' >
       <div ref={tooltipRef}>{children}</div>
-      <div className={`tooltip`} style={{display: state.visible ? 'block' : 'none'}}>
+      <div className={`tooltip on right`} style={{display: state.visible ? 'block' : 'none'}}>
         <div className="tooltip-arrow"></div>
         <div className="tooltip-inner">Tooltip text goes here</div>
       </div>
@@ -41,20 +45,6 @@ function ToolTip({children}) {
     // {/* <Editor /> */}
     // <div className="tooltip-arrow"></div><div className="tooltip-inner">Tooltip text goes here</div></div>;
 }
-
-// function Btn(props) {
-//   return (
-//     <button
-//       type="button"
-//       id={props.id}
-//       onMouseOver={props.onMouseOver}
-//       onMouseLeave={props.onMouseOut}
-//     >
-//       {props.text}
-//     </button>
-//   );
-// }
-
 
 export default ToolTip;
 

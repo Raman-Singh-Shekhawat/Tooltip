@@ -7,6 +7,7 @@ import ToolTip from './components/ToolTip';
 import './Styles/Editor.css';
 import './Styles/LivePreview.css'
 import './Styles/ToolTip.css'
+import { currentElement } from './components/Editor';
 
 function App() {
 
