@@ -15,4 +15,4 @@
 
 ● As soon as the functionality is fully functional, the developer will remove this section of the README (i.e. lines 12-16).
 
-● The UI has been designed almost 100% accurate to the design provided.
+● The UI has been very carefully designed to keep it almost 100% accurate to the design provided.
