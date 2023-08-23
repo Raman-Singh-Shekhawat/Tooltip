@@ -1,19 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import ReactDOM from 'react-dom'
-import Editor from './Editor';
 
 
 function ToolTip({children}) {
   const [state, setState] = useState({ visible: false, x: 0, y: 0, type: "none" });
-  const [cornerRadius, setCornerRadius] = useState('');
 
   const tooltipRef = useRef();
-
-  const handleCornerRadiusChange = (event) => {setCornerRadius(event.target.value);
-  
-    document.getElementById(Editor.selectedButton).style.borderRadius = event.target.value;
-  
-  }; 
 
   useEffect(() => {
     const tooltip = tooltipRef.current;

@@ -40,6 +40,11 @@ return (
             </select>
         </div>
 
+        <div>
+            <label htmlFor="Tooltip_Text">Tooltip text</label> <br />
+            <input type="text" name="" id="ToolTip_Text" placeholder='Input'/>
+        </div>
+
         <div className='TS_P'>
                   
             <div className='Inline'>
@@ -67,7 +72,7 @@ return (
         <div className='C_TW'>
             <div className='Inline'>
                 <label htmlFor="Corner_Radius">Corner radius</label> <br />
-                <input type="number" name="" id="Corner_Radius" onChange={ToolTip.handleCornerRadiusChange}/>
+                <input type="number" name="" id="Corner_Radius"/>
             </div>
 
             <div className='Inline'>
