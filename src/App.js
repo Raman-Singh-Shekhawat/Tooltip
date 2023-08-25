@@ -11,11 +11,11 @@ function App() {
 
   const [selectedButton, setSelectedButton] = useState('btnCenter');
   const [styles, setStyles] = useState({
-    btnLeft: {text: '', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
-    btnRight: {text: '', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
-    btnCenter: {text: '', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
-    btnBtmL: {text: '', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
-    btnBtmR   : {text: '', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
+    btnLeft: {text: 'Tooltip text goes here', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
+    btnRight: {text: 'Tooltip text goes here', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
+    btnCenter: {text: 'Tooltip text goes here', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
+    btnBtmL: {text: 'Tooltip text goes here', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
+    btnBtmR   : {text: 'Tooltip text goes here', fontSize: null, padding: null, color: '', backgroundColor: '', borderRadius: null, tooltipWidth: null},
   })
 
   return(

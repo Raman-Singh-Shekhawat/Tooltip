@@ -32,7 +32,7 @@ function ToolTip({children, selectedButton, id, styles}) {
       <div ref={tooltipRef}>{children}</div>
       <div className={`tooltip`} style={{display: (state.visible || selectedButton === id) ? 'block' : 'none'}}>
         <div className="tooltip-arrow"></div>
-        <div className="tooltip-inner" style={{fontSize: `${styles[id].fontSize? styles[id].fontSize: 16}px`, padding: `${styles[id].padding}px`, color: `${styles[id].color}`, backgroundColor: `${styles[id].backgroundColor}`, borderRadius: `${styles[id].borderRadius}px`, width: `${styles[id].tooltipWidth}px`}}>
+        <div className="tooltip-inner" style={{fontSize: `${styles[id].fontSize? styles[id].fontSize: 16}px`, padding: `${styles[id].padding? styles[id].padding: 3}px`, color: `${styles[id].color}`, backgroundColor: `${styles[id].backgroundColor}`, borderRadius: `${styles[id].borderRadius}px`, width: `${styles[id].tooltipWidth}px`}}>
           {styles[id].text}
         </div>
       </div>
