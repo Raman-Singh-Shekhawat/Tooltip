@@ -4,8 +4,8 @@
     width: 100%;
     margin-top: 10px;
     margin-bottom: 12px;
-    border: none;
-    border-radius: px; 
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px; 
 }
 
 input
@@ -14,8 +14,8 @@ input
     padding: 10px;
     width: 100%;
     margin-bottom: 12px;
-    border: none;
-    border-radius: px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px; 
 }
 
 input[placeholer="input"]
