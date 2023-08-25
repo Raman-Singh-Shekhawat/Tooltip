@@ -26,14 +26,13 @@ input[placeholer="input"]
 .Inline 
 {
     display: inline-block;
-    margin-right: 10%;
+    margin-right: 0px;
 }
 
 .Container 
 {
     flex: 1;
     background: rgb(245,245,245);
-
     width: 307.402px;
     height: 631.388px;
     border: 2px solid white;
@@ -62,3 +61,4 @@ input[placeholer="input"]
     display: flex;
     justify-content: space-between;
 }
+

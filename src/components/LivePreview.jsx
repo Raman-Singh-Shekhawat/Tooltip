@@ -14,7 +14,6 @@ function Btn(props) {
 
 function LivePreview({selectedButton, styles}) {
   
-    console.log(selectedButton)
     const createBtn = (id, text) => {
       return (
         <ToolTip key={id} selectedButton = {selectedButton} id = {id} styles={styles}>
